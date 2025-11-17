@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "firebase": "^12.5.0",
+    "react-native-vector-icons": "^10.3.0"
+  }
+}
