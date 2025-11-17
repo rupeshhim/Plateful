@@ -6,7 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './src/screens/LoginScreen';
 import SignUpScreen from './src/screens/SignUpScreen';
 import HomeScreen from './src/screens/HomeScreen';
-import ForgotPasswordScreen from './src/screens/ForgotPasswordScreen'; // <-- 1. ADD THIS IMPORT
+import ForgotPasswordScreen from './src/screens/ForgotPasswordScreen'; 
+import HomeScreen from './src/screens/AIScreen'; // <-- 1. ADD THIS IMPORT
 
 const Stack = createStackNavigator();
 
@@ -23,7 +24,8 @@ const App = () => {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />{/* <-- 2. ADD THIS LINE */}
+        <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
+        <Stack.Screen name="AI" component={AIScreen} />{/* <-- 2. ADD THIS LINE */}
         
       </Stack.Navigator>
     </NavigationContainer>
